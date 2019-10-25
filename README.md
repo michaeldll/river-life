@@ -1,12 +1,2 @@
-# a minimalist startup kit
+# a river's life
 
-- editorconfig
-- webpack
-- babel
-- prettier
-
-# to do
-
-- eslint
-- flowjs / typescript
-- stylus
