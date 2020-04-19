@@ -79,7 +79,7 @@ let noiseStrength = 2;
 
 //audio
 let playerData = {
-	ambience: { file: 'assets/ambience_v2.mp3', started: false },
+	ambience: { file: 'assets/ambience_v4.mp3', started: false },
 	one: { file: 'assets/premiere_partie_laure.mp3', started: false },
 	two: { file: 'assets/deuxieme_partie_laure.mp3', started: false },
 	three: { file: 'assets/troisieme_partie_laure.mp3', started: false },
