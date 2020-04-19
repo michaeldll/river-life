@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>La Vie d'un Fleuve</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<div id="app"></div>
+
+		<div class="left">
+			<div class="pressBar"><div></div></div>
+			<div class="key special hide">
+				<span>
+					key
+				</span>
+			</div>
+		</div>
+
+		<div class="beginScreen">
+			<div>
+				<section id="lottie-logo"></section>
+
+				<div class="small-container">
+					<div class="loader">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<button class="start">start</button>
+				</div>
+				<img src="./assets/headset-24px.svg" class="headphones" alt="headphones" />
+			</div>
+		</div>
+		<div class="data">
+			<div class="cell">
+				<img src="assets/sprite-11-deverse.png" class="deverse" alt="yes2" />
+			</div>
+			<div class="cell">
+				<img src="assets/sprite-11-tonnes.png" class="tonnes" alt="yes3" />
+			</div>
+		</div>
+		<div class="end-screen">
+			<div class="credits">
+				Designer: <a target="_blank" href="https://www.instagram.com/roxanep_n.bis/">Roxane Peuvrier</a>
+			</div>
+			<div class="credits">
+				Development & Music: <a target="_blank" href="https://michaels.works">Michael de Laborde</a>
+			</div>
+			<div class="credits">
+				Voice Over : <a target="_blank" href="https://www.instagram.com/laure_graphic_lnt/">Laure Alnot</a>
+			</div>
+			<button class="start">Restart ?</button>
+		</div>
+		<script src="bundle.js" charset="utf-8"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"
+			type="text/javascript"
+		></script>
+		<script>
+			var animation = bodymovin.loadAnimation({
+				container: document.getElementById('lottie-logo'), // Required
+				path: 'assets/laviedunfleuve.json', // Required
+				renderer: 'svg/canvas/html', // Required
+				loop: true, // Optional
+				autoplay: true, // Optional
+				name: 'Hello World', // Name for future reference. Optional.
+			});
+			setTimeout(() => {
+				document.getElementById('lottie-logo').style.opacity = 1;
+			}, 100);
+			setTimeout(() => {
+				document.querySelector('.headphones').style.opacity = 1;
+			}, 500);
+		</script>
+	</body>
+</html>
